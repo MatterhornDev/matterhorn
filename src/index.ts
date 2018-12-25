@@ -17,7 +17,7 @@ const start = async () => {
 
   try {
     await fastify.listen(port)
-    fastify.log.info(`Rainier server started on port ${port}`)
+    fastify.log.info(`Matterhorn server started on port ${port}`)
   } catch (err) {
     fastify.log.error(err)
     process.exit(1)
