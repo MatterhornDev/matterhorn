@@ -9,6 +9,6 @@ module.exports = {
     }
   },
   testMatch: [
-    "**/__tests__/**/*.ts"
+    "**/tests/**/*.ts"
   ]
 }
