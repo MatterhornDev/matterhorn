@@ -8,6 +8,12 @@ An API Boilerplate project built with Node.js and Typescript.
 - 🧪 Test Runner: [Jest](https://jestjs.io/)
 - 👕 Linter: [TSLint](https://palantir.github.io/tslint/)
 
+## How to use
+1. Fork this repository
+2. Clone it to your computer
+3. Run `npm run dev`
+5. Make changes to the files in `src/` and watch as your app is automatically rebuilt and relaunched
+
 ## Scripts
 
 The following npm scripts can be run using `npm run <script>`. This project relies on `opn` and `rimraf` utilities in order to support cross-platform opening and deleting files.
