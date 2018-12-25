@@ -15,7 +15,7 @@
     "start": "node lib/index.js",
     "start:watch": "nodemon lib/index.js --log",
     "test": "jest --config jest.config.js",
-    "test:ci": "npm run test -- --ci --coverage --coverageReporters=cobertura --reporters=default --reporters=jest-junit"
+    "test:ci": "npm run test -- --ci --coverage --coverageReporters=html --coverageReporters=cobertura --reporters=default --reporters=jest-junit"
   },
   "author": "Ethan Arrowood",
   "license": "MIT",
