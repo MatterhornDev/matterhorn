@@ -1,12 +1,12 @@
-# Matterhorn
+# Matterhorn 🏔
 
 An API Boilerplate project built with Node.js and Typescript.
 
 - ⏱ Runtime: [Node.js](https://nodejs.org/en/)
-- 🖥 API: [Fastify](https://www.fastify.io/)
+- 🖥 API Framework: [Fastify](https://www.fastify.io/)
 - 🔏 Type System: [TypeScript](https://www.typescriptlang.org/)
-- 🧪 Testing: [Jest](https://jestjs.io/)
-- 👕 Linting: [TSLint](https://palantir.github.io/tslint/)
+- 🧪 Test Runner: [Jest](https://jestjs.io/)
+- 👕 Linter: [TSLint](https://palantir.github.io/tslint/)
 
 ## Scripts
 
