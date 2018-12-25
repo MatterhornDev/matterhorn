@@ -23,7 +23,7 @@ The following npm scripts can be run using `npm run <script>`. This project reli
 - `clean`: Recursively delete the `lib/` and `coverage/` directories
 - `clean:build`: Recursively delete the `lib/` directory
 - `clean:coverage`: Recursively delete the `coverage/` directory
-- `coverage`: Run the test suite and generate coverage reports in the following formats: `[json, text, lcov, html]`. If you want to only generate a single type of coverage report use `npm run test -- --coverageReporters=<report type>`
+- `coverage`: Run the test suite and generate coverage reports in the following formats: `[json, text, lcov, html]`. If you want to only generate a single type of coverage report use `npm run test -- --coverage --coverageReporters=<report type>`
 - `coverage:open`: Run `npm run coverage` and then automatically open the coverage html output in your default browser
 - `dev`: Concurrently runs `build:watch` and `start:watch` commands.
 - `lint`: Run the linter on the `src/` directory and output the result to the console

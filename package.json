@@ -14,7 +14,8 @@
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "start": "node lib/index.js",
     "start:watch": "nodemon lib/index.js --log",
-    "test": "jest --config jest.config.js"
+    "test": "jest --config jest.config.js",
+    "test:ci": "npm run test -- --ci --coverage --coverageReporters=cobertura --reporters=default --reporters=jest-junit"
   },
   "author": "Ethan Arrowood",
   "license": "MIT",
@@ -24,6 +25,7 @@
     "@types/yargs-parser": "^11.0.1",
     "concurrently": "^4.1.0",
     "jest": "^23.6.0",
+    "jest-junit": "^5.2.0",
     "nodemon": "^1.18.9",
     "opn-cli": "^4.0.0",
     "rimraf": "^2.6.2",

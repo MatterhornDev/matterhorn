@@ -10,5 +10,9 @@ module.exports = {
   },
   testMatch: [
     "**/tests/**/*.ts"
+  ],
+  reporters: [
+    "default",
+    "jest-junit"
   ]
 }
