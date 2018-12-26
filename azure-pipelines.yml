@@ -22,8 +22,21 @@ steps:
     npm run lint
   displayName: 'npm lint'
 - script: |
-    npm run test
-  displayName: 'npm test'
+    npm run test:ci
+  displayName: 'npm test:ci'
 - script: |
     npm run build
   displayName: 'npm build'
+  
+- task: PublishTestResults@2
+  condition: succeededOrFailed()
+  inputs:
+    testRunner: JUnit
+    testResultsFiles: '**/junit.xml'
+  displayName: 'Publish Test Results'
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(System.DefaultWorkingDirectory/coverage/*coverage.xml'
+    reportDirectory: '$(System.DefaultWorkingDirectory/coverage'
+  displayName: 'Publish Code Coverage'
