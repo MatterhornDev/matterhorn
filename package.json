@@ -41,6 +41,6 @@
     "fastify": "^2.0.0-rc.3"
   },
   "jest-junit": {
-    "JEST_JUNIT_OUTPUT": "./coverage/junit.xml"
+    "outputDirectory": "coverage"
   }
 }

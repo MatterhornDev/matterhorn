@@ -36,14 +36,14 @@ steps:
   condition: succeededOrFailed()
   inputs:
     testRunner: JUnit
-    testResultsFiles: '$(System.DefaultWorkingDirectory/coverage/junit.xml'
+    testResultsFiles: '$(System.DefaultWorkingDirectory)/coverage/junit.xml'
   displayName: 'Publish Test Results'
 
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: Cobertura
-    summaryFileLocation: '$(System.DefaultWorkingDirectory/coverage/cobertura-coverage.xml'
-    reportDirectory: '$(System.DefaultWorkingDirectory/coverage'
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage/cobertura-coverage.xml'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/coverage'
   displayName: 'Publish Code Coverage'
 
 - task: Npm@1
