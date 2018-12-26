@@ -15,7 +15,7 @@
     "start": "node lib/index.js",
     "start:watch": "nodemon lib/index.js --log",
     "test": "jest --config jest.config.js",
-    "test:ci": "npm run test -- --ci --coverage --coverageReporters=html --coverageReporters=cobertura --reporters=default --reporters=jest-junit"
+    "test:ci": "npm run test -- --ci --reporters=jest-junit --coverage --coverageReporters=html --coverageReporters=json --coverageReporters=cobertura"
   },
   "author": "Ethan Arrowood",
   "license": "MIT",
@@ -39,5 +39,8 @@
   },
   "dependencies": {
     "fastify": "^2.0.0-rc.3"
+  },
+  "jest-junit": {
+    "JEST_JUNIT_OUTPUT": "./coverage/junit.xml"
   }
 }
