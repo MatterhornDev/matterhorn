@@ -15,19 +15,23 @@ steps:
     versionSpec: '11.x'
   displayName: 'Install Node.js'
 
-- script: |
-    npm install
-  displayName: 'npm install'
-- script: |
-    npm run lint
-  displayName: 'npm lint'
-- script: |
-    npm run test:ci
-  displayName: 'npm test:ci'
-- script: |
-    npm run build
-  displayName: 'npm build'
-  
+- task: Npm@1
+  inputs:
+    command: install
+  displayName: 'npm Install'
+
+- task: Npm@1
+  inputs:
+    command: custom
+    customCommand: 'run lint'
+  displayName: 'npm run lint'
+
+- task: Npm@1
+  inputs:
+    command: custom
+    customCommand: 'run test:ci'
+  displayName: 'npm run test:ci'
+
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
@@ -41,3 +45,9 @@ steps:
     summaryFileLocation: '$(System.DefaultWorkingDirectory/coverage/cobertura-coverage.xml'
     reportDirectory: '$(System.DefaultWorkingDirectory/coverage'
   displayName: 'Publish Code Coverage'
+
+- task: Npm@1
+  inputs:
+    command: custom
+    customCommand: 'run build'
+  displayName: 'npm run build'
