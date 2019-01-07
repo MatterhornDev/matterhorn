@@ -23,3 +23,7 @@ test('should return twitter handle', async () => {
     expect(error).toBeFalsy()
   }
 })
+
+test('should fail miserably', () => {
+  expect(true).toBeFalsy()
+})
