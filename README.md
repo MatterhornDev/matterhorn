@@ -6,7 +6,7 @@ An API Boilerplate project built with Node.js and Typescript.
 - 🖥 API Framework: [Fastify](https://www.fastify.io/)
 - 🔏 Type System: [TypeScript](https://www.typescriptlang.org/)
 - 🧪 Test Runner: [Jest](https://jestjs.io/)
-- 👕 Linter: [TSLint](https://palantir.github.io/tslint/)
+- 👕 Linter: [ESLint](https://eslint.org/)
 - 📦 Continuous Integration: [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)
 
 ## Quick Start
