@@ -17,7 +17,7 @@ steps:
 
 - task: Npm@1
   inputs:
-    command: install
+    command: ci
   displayName: 'npm Install'
 
 - task: Npm@1
@@ -34,8 +34,7 @@ steps:
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()
-  inputs:
-    testRunner: JUnit
+  inputs: testRunner: JUnit
     testResultsFiles: '$(System.DefaultWorkingDirectory)/coverage/junit.xml'
   displayName: 'Publish Test Results'
 
