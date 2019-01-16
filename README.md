@@ -49,5 +49,5 @@ If you are interested in contributing make sure to follow these practices:
 - NPM commands `test`, `lint`, and `build` run without failing. 
 - If you are solving an open issue, reference it in the Pull Request description using `Ref #<issue number>`.
 
-### Contributors
+### Maintainers
 🦉 Ethan Arrowood _Original Author_ - Follow on: Twitter [@ArrowoodTech](https://twitter.com/arrowoodtech) & GitHub [@Ethan-Arrowood](https://github.com/Ethan-Arrowood/)
