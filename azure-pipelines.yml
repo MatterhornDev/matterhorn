@@ -34,7 +34,7 @@ steps:
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()
-  inputs: 
+  inputs:
     testRunner: JUnit
     testResultsFiles: '$(System.DefaultWorkingDirectory)/coverage/junit.xml'
   displayName: 'Publish Test Results'
