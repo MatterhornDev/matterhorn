@@ -1,14 +1,14 @@
-module.exports = {
-  moduleFileExtensions: [ "ts", "js" ],
-  transform: {
+{
+  "moduleFileExtensions": [ "ts", "js" ],
+  "transform": {
     "^.+\\.(ts)$": "ts-jest"
   },
-  globals: {
+  "globals": {
     "ts-jest": {
       "tsConfig": "tsconfig.json"
     }
   },
-  testMatch: [
+  "testMatch": [
     "**/tests/**/*.ts"
   ]
 }
