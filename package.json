@@ -11,10 +11,11 @@
     "coverage": "npm run test -- --coverage --coverageReporters=json text lcov html",
     "coverage:open": "npm run coverage && opn ./coverage/index.html",
     "dev": "concurrently \"npm run build:watch\" \"npm run start:watch\"",
+    "install:ci": "npm ci",
     "lint": "eslint 'src/**/*.ts'",
     "start": "node lib/index.js",
     "start:watch": "nodemon lib/index.js --log",
-    "test": "jest --config jest.config.js",
+    "test": "jest --config jest.config.json",
     "test:ci": "npm run test -- --ci --reporters=jest-junit --coverage --coverageReporters=html --coverageReporters=json --coverageReporters=cobertura"
   },
   "author": "Ethan Arrowood",
