@@ -51,3 +51,4 @@ If you are interested in contributing make sure to follow these practices:
 
 ### Contributors
 🦉 Ethan Arrowood _Original Author_ - Follow on: Twitter [@ArrowoodTech](https://twitter.com/arrowoodtech) & GitHub [@Ethan-Arrowood](https://github.com/Ethan-Arrowood/)
+🚀 Alyssa Cooper _Maintainer_ - Follow on: Twitter [@ayecoops](https://twitter.com/ayecoops) & GitHub [@Alyssa-Cooper](https://github.com/Alyssa-Cooper/)
