@@ -19,9 +19,8 @@ export default function createServer(opts?: Fastify.ServerOptions) {
   // Fastify Swagger Test URI demonstration i.e. sample Path. 
   fastify.post('/user/:id', {
     schema: {
-      description: 'post some data',
-      tags: ['user'],
-      summary: 'A User Creation API',
+
+
       params: {
         type: 'object',
         properties: {
@@ -54,14 +53,10 @@ export default function createServer(opts?: Fastify.ServerOptions) {
             username: { type: 'string' },
           }
         }
-      },
-      security: [
-        {
-          'apiKey': []
-        }
-      ]
+      }
+    
     }
-  }, (req, reply) => {
+  }, async (req, reply) => {
    
     return reply.code(201).send({
       message: req.body.user.name + ' - Successfully Created',
