@@ -1,6 +1,7 @@
 import * as FastifySwagger from 'fastify-swagger' 
+import * as Fastify from 'fastify'
 
-export  function configureSwagger(fastifyInstance?: any ) {
+export  function configureSwagger(fastifyInstance: Fastify.FastifyInstance ) {
     
   fastifyInstance.register(FastifySwagger, {
     routePrefix: '/documentation',
@@ -33,14 +34,3 @@ export  function configureSwagger(fastifyInstance?: any ) {
   })
 
 } 
-
-/*
-export default function configureOtherPlugins(fastifyInstance?: any ) {
-    
-  // we can configure other plugins here. 
-
-} */
-
-export function configureOtherThings() {
-
-}
