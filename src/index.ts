@@ -12,7 +12,7 @@ const port: number = parseInt(JSON.stringify(process.env.PORT), 10) || 3000
 
 const start = async () => {
   const fastify = createServer({
-    logger: log,
+    logger: log
   })
 
   try {

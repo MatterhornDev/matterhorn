@@ -4,7 +4,7 @@ import { configureSwagger } from './plugins'
 export default function createServer(opts?: Fastify.ServerOptions) {
   const fastify = Fastify(opts)
 
-  configureSwagger(fastify); 
+  configureSwagger(fastify) 
 
   /* eslint-disable-next-line no-unused-vars */
   fastify.get('/', async (request, reply) => {
@@ -57,14 +57,12 @@ export default function createServer(opts?: Fastify.ServerOptions) {
       },
       security: [
         {
-          "apiKey": []
+          'apiKey': []
         }
       ]
     }
   }, (req, reply) => {
-
-    console.log("COMING HERE") ;
-    
+   
     return reply.code(201).send({
       message: req.body.user.name + ' - Successfully Created',
       status: 'success',
