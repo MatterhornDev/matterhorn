@@ -38,6 +38,8 @@
   },
   "dependencies": {
     "fastify": "^2.0.0-rc.3",
+    "fastify-auth": "^0.4.0",
+    "fastify-jwt": "^0.9.3",
     "fastify-swagger": "^2.3.2"
   },
   "jest-junit": {
