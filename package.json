@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "fastify": "^2.0.0-rc.3",
-    "fastify-swagger": "^2.3.1"
+    "fastify-swagger": "^2.3.2"
   },
   "jest-junit": {
     "outputDirectory": "coverage"

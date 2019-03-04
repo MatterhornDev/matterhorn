@@ -7,7 +7,7 @@ export default function createServer(opts?: Fastify.ServerOptions) {
   configureSwagger(fastify) 
 
   /* eslint-disable-next-line no-unused-vars */
-  fastify.get('/', async (request, reply) => {
+  fastify.get('/', async (request , reply) => {
     return { hello: 'world' }
   })
 
@@ -20,7 +20,7 @@ export default function createServer(opts?: Fastify.ServerOptions) {
   // Fastify Swagger Test URI demonstration i.e. sample Path. 
   fastify.post('/user/:id', {
     schema: {
-      description: 'post some data',
+      description: 'user Creation API',
       tags: ['user'],
       summary: 'A User Creation API',
       params: {
