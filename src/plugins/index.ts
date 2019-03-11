@@ -1,7 +1,9 @@
 import * as FastifySwagger from 'fastify-swagger' 
-import * as Fastify from 'fastify'
+/* eslint-disable-next-line no-unused-vars */
+import { FastifyInstance } from 'fastify'
+ 
 
-export  function configureSwagger(fastifyInstance: Fastify.FastifyInstance ) {
+export  function configureSwagger(fastifyInstance: FastifyInstance ) {
     
   fastifyInstance.register(FastifySwagger, {
     routePrefix: '/documentation',
