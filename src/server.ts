@@ -1,13 +1,13 @@
 import * as Fastify from 'fastify'
-import { configureSwagger } from './plugins'
+import { configureSwaggerPlugin } from './plugins'
 
 export default function createServer(opts?: Fastify.ServerOptions) {
   const fastify = Fastify(opts)
 
-  configureSwagger(fastify) 
+  configureSwaggerPlugin(fastify) 
 
   /* eslint-disable-next-line no-unused-vars */
-  fastify.get('/', async (request , reply) => {
+  fastify.get('/', async (request, reply) => {
     return { hello: 'world' }
   })
 
@@ -17,60 +17,6 @@ export default function createServer(opts?: Fastify.ServerOptions) {
   })
 
 
-  // Fastify Swagger Test URI demonstration i.e. sample Path. 
-  fastify.post('/user/:id', {
-    schema: {
-      description: 'user Creation API',
-      tags: ['user'],
-      summary: 'A User Creation API',
-      params: {
-        type: 'object',
-        properties: {
-          id: {
-            type: 'string',
-            description: 'user id'
-          }
-        }
-      },
-      body: {
-        type: 'object',
-        properties: {
-          comments: { type: 'string' },
-          user: {
-            type: 'object',
-            properties: {
-              name: { type: 'string' },
-              password: { type: 'string' }
-            }
-          }
-        }
-      },
-      response: {
-        201: {
-          description: 'Successful response',
-          type: 'object',
-          properties: {
-            message: { type: 'string' },
-            status: { type: 'string' },
-            username: { type: 'string' },
-          }
-        }
-      },
-      security: [
-        {
-          'apiKey': []
-        }
-      ]
-    }
-  },async (req, reply) => {
-   
-    return reply.code(201).send({
-      message: req.body.user.name + ' - Successfully Created',
-      status: 'success',
-      username: req.body.user.name
-    })
-
-  })
 
   return fastify
 }
