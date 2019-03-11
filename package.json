@@ -1,6 +1,6 @@
 {
   "name": "matterhorn",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An API Boilerplate project built with Node.js and Typescript",
   "scripts": {
     "build": "tsc --project tsconfig.json",
