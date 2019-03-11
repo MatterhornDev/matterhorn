@@ -1,6 +1,6 @@
 {
   "name": "matterhorn",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An API Boilerplate project built with Node.js and Typescript",
   "scripts": {
     "build": "tsc --project tsconfig.json",
@@ -21,23 +21,23 @@
   "author": "Ethan Arrowood",
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^23.3.10",
-    "@types/node": "^10.12.18",
-    "@types/yargs-parser": "^11.0.1",
+    "@types/jest": "^23.3.14",
+    "@types/node": "^10.12.30",
+    "@types/yargs-parser": "^11.0.2",
     "concurrently": "^4.1.0",
-    "eslint": "^5.12.0",
-    "jest": "^23.6.0",
-    "jest-junit": "^5.2.0",
-    "nodemon": "^1.18.9",
+    "eslint": "^5.15.1",
+    "jest": "^24.4.0",
+    "jest-junit": "^6.3.0",
+    "nodemon": "^1.18.10",
     "opn-cli": "^4.0.0",
-    "rimraf": "^2.6.2",
-    "ts-jest": "^23.10.5",
-    "typescript": "^3.2.2",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.0",
+    "typescript": "^3.3.3333",
     "typescript-eslint-parser": "^21.0.2",
     "yargs-parser": "^11.1.1"
   },
   "dependencies": {
-    "fastify": "^2.0.0-rc.3"
+    "fastify": "^2.0.1"
   },
   "jest-junit": {
     "outputDirectory": "coverage"
