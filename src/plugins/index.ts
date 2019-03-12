@@ -1,16 +1,14 @@
 import * as FastifySwagger from 'fastify-swagger' 
 /* eslint-disable-next-line no-unused-vars */
 import { FastifyInstance } from 'fastify'
- 
 
-export  function configureSwaggerPlugin(fastifyInstance: FastifyInstance ) {
-    
+export function configureSwaggerPlugin(fastifyInstance: FastifyInstance) {
   fastifyInstance.register(FastifySwagger, {
     routePrefix: '/documentation',
     swagger: {
       info: {
-        title: 'MatterHorn Test swagger',
-        description: 'testing the fastify swagger api',
+        title: 'Matterhorn Test swagger',
+        description: 'Testing the fastify swagger api',
         version: '0.1.0'
       },
       externalDocs: {
@@ -34,8 +32,6 @@ export  function configureSwaggerPlugin(fastifyInstance: FastifyInstance ) {
     },
     exposeRoute: true
   })
-
-
 
   // Fastify Swagger Test URI demonstration i.e. sample Path. 
   fastifyInstance.post('/user/:id', {
@@ -82,14 +78,11 @@ export  function configureSwaggerPlugin(fastifyInstance: FastifyInstance ) {
         }
       ]
     }
-  },async (request, reply) => {
-     
+  }, async (request, reply) => {
     return reply.code(201).send({
       message: request.body.user.name + ' - Successfully Created',
       status: 'success',
       username: request.body.user.name
     })
-  
   })
-
-} 
+}
