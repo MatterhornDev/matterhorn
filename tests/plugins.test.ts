@@ -1,6 +1,6 @@
 import createServer from '../src/server'
 
-test('should return swager page on /documentation', async () => {
+test('should return swagger page on /documentation', async () => {
   const fastify = createServer()
 
   try {
