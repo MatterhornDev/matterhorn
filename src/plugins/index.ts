@@ -1,2 +1,2 @@
 export * from './swagger'
-export * from './authentication/auth'
+export * from './auth'
