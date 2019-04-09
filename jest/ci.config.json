@@ -1,0 +1,17 @@
+{
+  "moduleFileExtensions": [ "ts", "js" ],
+  "preset": "ts-jest",
+  "globals": {
+    "ts-jest": {
+      "tsConfig": "tsconfig.json"
+    }
+  },
+  "testMatch": [
+    "**/tests/**/*.ts"
+  ],
+  "rootDir": "./../",
+  "collectCoverage": true,
+  "collectCoverageFrom": [ "src/**/*.ts" ],
+  "coverageReporters": ["html", "json", "cobertura"],
+  "reporters": ["jest-junit"]
+}
