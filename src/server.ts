@@ -1,10 +1,11 @@
 import * as Fastify from 'fastify'
-import { configureSwaggerPlugin } from './plugins'
+import { configureAuthPlugin, configureSwaggerPlugin } from './plugins'
 
 export default function createServer(opts?: Fastify.ServerOptions) {
   const fastify = Fastify(opts)
 
   configureSwaggerPlugin(fastify)
+  configureAuthPlugin(fastify)
 
   /* eslint-disable-next-line no-unused-vars */
   fastify.get('/', async (request, reply) => {
