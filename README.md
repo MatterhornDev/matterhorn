@@ -49,6 +49,24 @@ If you are interested in contributing make sure to follow these practices:
 - NPM commands `test`, `lint`, and `build` run without failing. 
 - If you are solving an open issue, reference it in the Pull Request description using `Ref #<issue number>`.
 
+## Jest
+
+Matterhorn has a unique Jest set up. Under the [`jest/`](./jest) directory there are three configuration files [`ci.config.json`](./jest/ci.config.json), [`coverage.config.json`](./jest/coverage.config.json), and [`test.config.json`](./jest/test.config.json). Each configuration file maps to a specific jest experience.
+
+#### npm run test
+
+Runs jest with the `test.config.json` configuration. This configuration does not collect any code coverage.
+
+#### npm run coverage
+
+Runs jest with the `coverage.config.json` configuration. It runs the same test suite as `npm run test` and collects coverage from all files under the [`src/`](./src) directory. It outputs the coverage information in the following formats: `json`, `text`, `lcov`, and `html`. It does not rely on any external reporter dependencies.
+
+#### npm run test:ci
+
+Runs jest with the `ci.config.json` configuration. It runs the same test suite as `npm run test` and collects coverage similar to the `npm run coverage` command, but utilizes jest's built in `ci` caching functionality. Additionally, it outputs the coverage in the following formats: `html`, `json`, and `cobertura`. It utilizes `jest-junit` reporter to generate compatible junit xml files for Azure DevOps test reporting, and the `cobertura` format for the code coverage reporting.
+
+<hr>
+
 ### Maintainers
 🦉 Ethan Arrowood _Original Author_ - Follow on: Twitter [@ArrowoodTech](https://twitter.com/arrowoodtech) & GitHub [@Ethan-Arrowood](https://github.com/Ethan-Arrowood/)
 

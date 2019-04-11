@@ -9,5 +9,5 @@
   "testMatch": [
     "**/tests/**/*.ts"
   ],
-  "collectCoverageFrom": [ "src" ]
+  "rootDir": "./../"
 }
