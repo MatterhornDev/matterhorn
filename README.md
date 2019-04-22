@@ -71,3 +71,9 @@ Runs jest with the `ci.config.json` configuration. It runs the same test suite a
 🦉 Ethan Arrowood _Original Author_ - Follow on: Twitter [@ArrowoodTech](https://twitter.com/arrowoodtech) & GitHub [@Ethan-Arrowood](https://github.com/Ethan-Arrowood/)
 
 🚀 Alyssa Cooper _Maintainer_ - Follow on: Twitter [@ayecoops](https://twitter.com/ayecoops) & GitHub [@Alyssa-Cooper](https://github.com/Alyssa-Cooper/)
+
+<hr>
+
+### Integration Statuses
+
+[![Build Status](https://dev.azure.com/matterhorndev/matterhorn/_apis/build/status/MatterhornDev.matterhorn?branchName=master)](https://dev.azure.com/matterhorndev/matterhorn/_build/latest?definitionId=1&branchName=master)
