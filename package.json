@@ -21,9 +21,9 @@
   "author": "Ethan Arrowood",
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^23.3.14",
-    "@types/node": "^10.14.4",
-    "@types/yargs-parser": "^11.0.3",
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.6",
+    "@types/yargs-parser": "^13.0.0",
     "concurrently": "^4.1.0",
     "eslint": "^5.16.0",
     "jest": "^24.7.1",
@@ -33,13 +33,13 @@
     "rimraf": "^2.6.3",
     "ts-jest": "^24.0.2",
     "typescript": "^3.4.2",
-    "typescript-eslint-parser": "^21.0.2",
-    "yargs-parser": "^11.1.1"
+    "typescript-eslint-parser": "^22.0.0",
+    "yargs-parser": "^13.0.0"
   },
   "dependencies": {
     "@types/jsonwebtoken": "^8.3.2",
     "fastify": "^2.2.0",
-    "fastify-jwt": "^0.9.6",
+    "fastify-jwt": "^0.10.0",
     "fastify-swagger": "^2.3.2"
   },
   "jest-junit": {
