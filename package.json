@@ -12,7 +12,7 @@
     "coverage:open": "npm run coverage && opn ./coverage/index.html",
     "dev": "concurrently \"npm run build:watch\" \"npm run start:watch\"",
     "install:ci": "npm ci",
-    "lint": "eslint 'src/**/*.ts'",
+    "lint": "eslint '{src,tests}/**/*.ts'",
     "start": "node lib/index.js",
     "start:watch": "nodemon lib/index.js --log",
     "test": "jest --config jest/test.config.json",
@@ -24,6 +24,8 @@
     "@types/jest": "^24.0.11",
     "@types/node": "^11.13.6",
     "@types/yargs-parser": "^13.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/parser": "^1.7.0",
     "concurrently": "^4.1.0",
     "eslint": "^5.16.0",
     "jest": "^24.7.1",
@@ -33,7 +35,6 @@
     "rimraf": "^2.6.3",
     "ts-jest": "^24.0.2",
     "typescript": "^3.4.2",
-    "typescript-eslint-parser": "^22.0.0",
     "yargs-parser": "^13.0.0"
   },
   "dependencies": {

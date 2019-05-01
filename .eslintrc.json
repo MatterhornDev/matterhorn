@@ -5,7 +5,8 @@
         "jest": true
     },
     "extends": "eslint:recommended",
-    "parser": "typescript-eslint-parser",
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
     "parserOptions": {
         "ecmaVersion": 6,
         "sourceType": "module"
@@ -26,6 +27,15 @@
         "semi": [
             "error",
             "never"
+        ],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "args": "after-used",
+                "ignoreRestSiblings": false
+            }
         ]
     }
 }

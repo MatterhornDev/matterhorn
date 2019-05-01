@@ -1,4 +1,3 @@
-/* eslint-disable-next-line no-unused-vars */
 import { FastifyInstance } from 'fastify'
 import * as fastifyJWT from 'fastify-jwt'
 
@@ -24,7 +23,7 @@ export function configureAuthPlugin(fastify: FastifyInstance) {
         reply.send(err)
       }
     }
-  /* eslint-disable-next-line no-unused-vars */
+  /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
   }, async (request, reply) => {
     return { foo: 'bar' }
   })

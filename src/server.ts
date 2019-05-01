@@ -7,12 +7,12 @@ export default function createServer(opts?: Fastify.ServerOptions) {
   configureSwaggerPlugin(fastify)
   configureAuthPlugin(fastify)
 
-  /* eslint-disable-next-line no-unused-vars */
+  /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
   fastify.get('/', async (request, reply) => {
     return { hello: 'world' }
   })
 
-  /* eslint-disable-next-line no-unused-vars */
+  /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
   fastify.get('/twitter', async (request, _reply) => {
     return { twitterHandle: request.query.handle }
   })
