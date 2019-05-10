@@ -4,28 +4,17 @@
         "node": true,
         "jest": true
     },
-    "extends": "eslint:recommended",
-    "parser": "typescript-eslint-parser",
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
     "parserOptions": {
         "ecmaVersion": 6,
         "sourceType": "module"
     },
     "rules": {
-        "indent": [
-            "error",
-            2
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "never"
-        ]
+        "no-console": "warn",
+        "@typescript-eslint/indent": ["error", 2],
+        "semi": ["error", "never"],
+        "@typescript-eslint/explicit-function-return-type": "off"
     }
 }
