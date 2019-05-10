@@ -1,5 +1,4 @@
 import * as FastifySwagger from 'fastify-swagger' 
-/* eslint-disable-next-line no-unused-vars */
 import { FastifyInstance } from 'fastify'
 
 export function configureSwaggerPlugin(fastifyInstance: FastifyInstance) {
