@@ -29,7 +29,7 @@
     "concurrently": "^4.1.0",
     "eslint": "^5.16.0",
     "jest": "^24.7.1",
-    "jest-junit": "^6.3.0",
+    "jest-junit": "^7.0.0",
     "nodemon": "^1.18.11",
     "opn-cli": "^4.1.0",
     "rimraf": "^2.6.3",
