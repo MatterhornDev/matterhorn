@@ -76,4 +76,4 @@ Runs jest with the `ci.config.json` configuration. It runs the same test suite a
 
 ### Integration Statuses
 
-[![Build Status](https://dev.azure.com/matterhorndev/matterhorn/_apis/build/status/MatterhornDev.matterhorn?branchName=master)](https://dev.azure.com/matterhorndev/matterhorn/_build/latest?definitionId=1&branchName=master) [![Greenkeeper badge](https://badges.greenkeeper.io/MatterhornDev/matterhorn.svg)](https://greenkeeper.io/)
+[![Build Status](https://dev.azure.com/matterhorndev/matterhorn/_apis/build/status/MatterhornDev.matterhorn?branchName=master)](https://dev.azure.com/matterhorndev/matterhorn/_build/latest?definitionId=1&branchName=master)
