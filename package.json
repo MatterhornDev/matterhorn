@@ -28,7 +28,7 @@
     "@typescript-eslint/parser": "^1.13.0",
     "concurrently": "^4.1.0",
     "eslint": "^5.16.0",
-    "jest": "^24.7.1",
+    "jest": "^24.9.0",
     "jest-junit": "^9.0.0",
     "nodemon": "^1.18.11",
     "opn-cli": "^5.0.0",
