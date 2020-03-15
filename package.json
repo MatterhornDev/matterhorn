@@ -41,7 +41,7 @@
     "@types/jsonwebtoken": "^8.3.5",
     "fastify": "^2.10.0",
     "fastify-jwt": "^1.2.0",
-    "fastify-swagger": "^2.3.2"
+    "fastify-swagger": "^2.5.0"
   },
   "jest-junit": {
     "outputDirectory": "coverage"
