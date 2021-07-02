@@ -38,7 +38,7 @@
     "yargs-parser": "^18.1.0"
   },
   "dependencies": {
-    "@types/jsonwebtoken": "^8.3.5",
+    "@types/jsonwebtoken": "^8.5.3",
     "fastify": "^2.10.0",
     "fastify-jwt": "^1.2.0",
     "fastify-swagger": "^2.3.2"
